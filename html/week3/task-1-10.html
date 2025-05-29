@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1
+        
+    </title>
+    <style>
+    body{
+        margin: 0px;
+        padding: 0;
+        text-align: center;
+        flex: auto;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: rgb(252, 252, 253);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px ; /* Keep text left-aligned within centered container */
+    }
+    .ram{
+    background-color:rgb(233,230,255) ;
+    border-radius: 10px;
+    }
+    h2{
+        text-align: center;
+        color: #0033cc;
+    }
+    h3 {
+      color: rgb(8, 8, 8);
+      padding: 8px;
+      border-radius: 6px;
+    }
+    
+    table{
+        background-color: red;
+        color: white;
+        width: 100px;
+        height: 40px;
+    }
+    input {
+    margin: right;
+    }
+    legend{
+        background-color:rgb(46,126,183);
+        color: white;
+        border-radius: 10px;
+        text-align: start;
+        padding: 10px;
+    }
+    fieldset{
+        border-radius: 20px;
+        padding: 15px;
+        padding-bottom: 15px;
+    }
+    table{
+        border-radius: 20px;
+    }
+    label {
+       margin-bottom: 8px; 
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+
+    input, select, textarea {
+        margin-bottom: 20px; 
+        margin-left: 10px;
+       margin-right: 10px;
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+    button{
+        padding: 5px;
+        background-color: #f01414;
+        color: white;
+        border-radius: 20px;
+    }
+    .s{
+        padding: 2px;
+        
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="ram">
+        <img src="ts.png" > 
+        <h2> TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+        <h3>GENERAL BUS PASS APPLICATION</h3>
+
+    </div>
+    <form>
+    <fieldset>
+        <legend>Application Details</legend>
+        <label for="name">Name *</label>
+        <input type="text" id="name" pattern=".{1,20}" required>
+        <label for="fname" >Father's/Guardian's Name *</label>
+        <input type="text" id="fname" required > <br>
+        <label for="dob">Date of birth *</label>
+        <input type="date" id="dob" required>
+        <label for="gender" > Gender *</label>
+        <input type="radio" id="male" name="gender" value="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="gender" name="gender">
+        <label for="female"> Female</label><br>
+
+       
+        <label for="ph">WhatsApp No *</label>
+        <input type="tel" id="ph" required>
+        <label for="email">E-mail Id *</label>
+        <input type="email" id="email" required><br>
+        <label for="photo">Photo *</label>
+        <input type="file" id="photo" required>
+        <label for="Aadno">Aadhaar No *</label>
+        <input type="number" id="Aadno" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <label for="address">Application's Address *</label>
+        <textarea name="area" id="address" cols="10" rows="5"></textarea>
+        <label for="distric" > District *</label>
+        <select>
+            <option value="HYDERABAD" id="district">HYDERABAD</option> 
+        </select> <br>
+        <label for="mandal">Mandal *</label>
+        <select>
+            <option value="HYDERABAD" id="district">HYDERABAD</option> 
+        </select> 
+        <label for="village">Village *</label>
+        <select>
+            <option value="HYDERABAD" id="village">HYDERABAD</option> 
+        </select> <br>
+        <label for="pincode">Pincode *</label>
+        <input type="text" id="pincode" required>
+    </fieldset>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="city">City *</label>
+        <select>
+            <option value="city" id="city">HYDERABAD</option> 
+        </select><br>
+        <label for="passt">Pass Type *</label>
+        <select>
+            <option id="passt" selected>----Select----</option> 
+            <option id="passt" >GREATER PASS</option>
+            <option id="passt" >GENERAL ORDINARY ROUTE PASS MTLY</option>
+            <option id="passt">ORDINARY PASS</option>
+            <option id="passt">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+            <option id="passt">METRO EXPRESS PASS</option>
+            <option id="passt">METRO DELUXE PASS</option>
+        </select>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <label for="payment">Payment Mode *</label>
+        <select>
+            <option  id="payment" selected>Select Payment Mode</option> 
+            <option id="payment">Payment at Counter</option>
+        </select><br>
+        <label for="pass delivery">Select Pass Delivery Mode * *</label>
+        <select>
+            <option  id="payment" selected>Select Pass Delivery Mode</option> 
+            <option id="payment">At Counter</option>
+        </select><br>
+
+        <label for="center">Center at which u want to Collect Pass*</label>
+        <select>
+            <option  id="center" selected>----Select----</option> 
+            <option  id="center" selected>RTC DILSUKHNAGAR - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC ABIDS - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC CBS - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC KPHB - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC KUKATPALLI - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC KACHIGUDA - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC KOTI - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC DILSUKHNAGAR - HYD [30/05/2025]</option> 
+            <option  id="center" selected>RTC JBS - HYD [30/05/2025]</option> 
+
+        </select>
+
+    </fieldset>
+    <section class="siva" align="center">
+    <label ><h1>JsB0ky 🔄</h1></label><br>
+        <input type="capcha"id="capcha"><br>
+        <button type="submit" autofocus>Submit</button>
+    </section>
+    </form>
+    </div>
+</body>
+</html>

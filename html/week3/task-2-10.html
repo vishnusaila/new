@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        fieldset{
+            width: 50px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            padding: 40px;
+        }
+        legend{
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+        label{
+            padding: 20px;
+            margin:start;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend>Task2</legend>
+        <label>Enter email:</label>
+        <input type="text" pattern="[a-z\d]+@(gmail|yahoo|outlook)\.(com|in|at|org|gov|edu)" autofocus required><br>
+
+        <label>Set password:</label>
+        <input type="text" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&])[\S]{8,16}" required><br>
+
+        <label>Enter date (YYYY-MM-DD):</label>
+        <input type="text" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" required><br>
+
+        <input type="submit">
+</fieldset>
+
+    
+</body>
+</html>
