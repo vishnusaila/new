@@ -43,3 +43,55 @@ while m>1:
     m=m//10
     digit+=1  
 print(digit)
+
+#polindrome
+m=232
+p=m
+polin=0
+while m>1:
+    n=m%10
+    m=m//10
+    polin+=n
+if polin==p:
+    print("polindrome")
+else:
+    print("not a polindrome")
+#7.Print the Fibonacci series up to N terms using a while loop
+n=5
+i=0
+feb=0
+while i<=5:
+    feb+=i
+    print(feb)
+    i+=1
+
+#9 . Create a number guessing game using a while loop
+import random as re
+
+u=int(input("enter a number : "))
+while True:
+    if u>=0 and u<=9:
+        ram=re.randint(1,9)
+        print(ram)
+        if ram==u:
+            print("Congratulations")
+            break
+        else:
+            u=int(input("Try again :"))
+    else:
+        print("Please Kindly enter Numbers Between 0 to 9 Only")
+        break
+
+# 10. Keep looping until the user guesses the correct number.
+import random as re
+
+u=int(input("enter a number : "))
+while True:
+    if u>=0 and u<=99:
+        ram=re.randint(1,99)
+        print(ram)
+        if ram==u:
+            print("Congratulations")
+            break
+        else:
+            u=int(input("Try again :"))

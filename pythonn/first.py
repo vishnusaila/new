@@ -1,4 +1,4 @@
-#variables
+"""#variables
 #interning
 #memory pulling
 #print() it is user defined method
@@ -53,6 +53,38 @@ mm=1
 print(id(bb))
 print(id(cc))
 print(id(nn))
-print(id(mm))
+print(id(mm))"""
+
+from flask import Flask, render_template, request, redirect, url_for
+import random as re
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html', message='')
+
+@app.route('/guess', methods=['POST'])
+def guess():
+    u = int(request.form['number'])
+    while True:
+        if u>=0 and u<=9:
+            ram=re.randint(1,9)
+            print(ram)
+            if ram==u:
+                message = "🎉 Congratulations! You guessed the number."
+                break
+            else:
+                u=int(input("Try again :"))
+        else:
+            message="Please Kindly enter Numbers Between 0 to 9 Only"
+            break
+
+
+    return render_template('index.html', message=message)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
 
